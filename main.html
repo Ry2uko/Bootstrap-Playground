@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Bootstrap Playground</title>
+        <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid" id="navbar">
+            <div class="row">
+              <div class="col-3"><a href="#home">Home</a></div>
+              <div class="col-3"><a href="#list">List</a></div>
+              <div class="col-3"><a href="#watch">Watch</a></div>
+              <div class="col-3"><a href="#about">About</a></div>
+            </div>
+          </div>
+        
+        <div class="container-fluid" id="main-container">
+          
+          <h1 class="text-center display-4">Bootstrap: Anime List</h1>
+          <h2 id="home">Home</h2>
+          <p>Home page of the project: <mark>Bootstrap: Anime List</mark>. </p> 
+          <p>This project is created to test Bootstrap and SCSS. This project's theme is <mark>Anime List</mark>.</p>
+          <div class="container-fluid" id="quotes-section">
+            
+            <h3>A Random Quote</h3>
+            <blockquote class="blockquote text-dark">
+              Those who claim to enjoy it are deluding themselves and others. They fit the events and environment around them to the youth mold as self-confirmation. They will fit any commonly held interpretations of life events to this mold in the name of youth. To them, lies, secrets, sins and failures are but seeds of spice in their youth. Supposedly, such failures were an indication of youth, then one who has failed to make friends must also be at the height of his youth. But, they would disagree on this point. Everything must fit into their preconstructed mold.<footer class="blockquote-footer">Hachiman Hikigaya</footer>
+            </blockquote>
+          </div>
+
+          <h2 id="list">List</h2>
+          
+          <ul class="my-4">
+            <li class="text-success"><span class="default">Completed</span></li>
+            <li class="text-primary"><span class="default">Watching</span></li>
+            <li class="text-secondary"><span class="default">Plan to Watch</span></li>
+            <li class="text-warning"><span class="default">On Hold</span></li>
+            <li class="text-danger"><span class="default">Dropped</span></li>
+          </ul>
+          
+          <h4>Filter: <span class="badge badge-danger">Disabled</span></h4>
+          <div class="container-fluid" id="list-filter">
+            <button type="button" class="btn btn-outline-info info-special">All Anime</button>
+            <button type="button" class="btn btn-outline-success">Completed</button>
+            <button type="button" class="btn btn-outline-primary">Watching</button>
+            <button type="button" class="btn btn-outline-secondary">Plan to Watch</button>
+            <button type="button" class="btn btn-outline-warning">On Hold</button>
+            <button type="button" class="btn btn-outline-danger">Dropped</button>
+          </div>
+          <!--Mobile Filter-->
+          <div class="list-group" id="list-filter-mobile">
+            <a href="javascript:void(0)" class="list-group-item link-info info-special">All Anime</a>
+            <a href="javascript:void(0)" class="list-group-item link-success">Completed</a>
+            <a href="javascript:void(0)" class="list-group-item link-primary">Watching</a>
+            <a href="javascript:void(0)" class="list-group-item link-secondary">Plan to Watch</a>
+            <a href="javascript:void(0)" class="list-group-item link-warning">On Hold</a>
+            <a href="javascript:void(0)" class="list-group-item link-danger">Dropped</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-success">
+                <td>Mob Psycho 100 II</td>
+                <td>TV</td>
+                <td>10</td>
+              </tr>
+              <tr class="table-success">
+                <td>Mob Psycho 100</td>
+                <td>TV</td>
+                <td>9</td>
+              </tr>
+              <tr class="table-success">
+                <td>One Piece Film: Z</td>
+                <td>Movie</td>
+                <td>9</td>
+              </tr>
+              <tr class="table-success">
+                <td>One Piece Movie 14: Stampede</td>
+                <td>Movie</td>
+                <td>9</td>
+              </tr>
+              <tr class="table-success">
+                <td>Demon Slayer: Mugen Train</td>
+                <td>Movie</td>
+                <td>9</td>
+              </tr>
+              <tr class="table-success">
+                <td>Saiki Kusuo: Final Arc</td>
+                <td>Special</td>
+                <td>8</td>
+              </tr>
+              <tr class="table-success">
+                <td>One Piece Film: Strong World Episode 0</td>
+                <td>Special</td>
+                <td>7</td>
+              </tr>
+              <tr>
+              <tr class="table-primary">
+                <td>One Piece</td>
+                <td>TV</td>
+                <td>10</td>
+              </tr>
+              <tr class="table-primary">
+                <td>Fumetsu no Anata e</td>
+                <td>TV</td>
+                <td>10</td>
+              </tr>
+              <tr class="table-primary">
+                <td>Tokyo Revengers</td>
+                <td>TV</td>
+                <td>8</td>
+              </tr>
+              <tr class="table-primary">
+                <td>Jujutsu Kaisen</td>
+                <td>TV</td>
+                <td>8</td>
+              </tr>
+              <tr class="table-primary">
+                <td>Hige wo Soru. Soshite Joshikousei wo Hirou.</td>
+                <td>TV</td>
+                <td>7</td>
+              </tr>
+              <tr class="table-secondary">
+                <td>Black Clover</td>
+                <td>TV</td>
+                <td>-</td>
+              </tr>
+              <tr class="table-secondary">
+                <td>Naruto: Shippuden</td>
+                <td>TV</td>
+                <td>-</td>
+              </tr>
+              <tr class="table-secondary">
+                <td>Gintama</td>
+                <td>TV</td>
+                <td>-</td>
+              </tr>
+              <tr class="table-secondary">
+                <td>Black Clover</td>
+                <td>TV</td>
+                <td>-</td>
+              </tr>
+              <tr class="table-secondary">
+                <td>Fullmetal Alchemist: Brotherhood Specials</td>
+                <td>Special</td>
+                <td>-</td>
+              </tr>
+              <tr class="table-warning">
+                <td>Bakemonogatari</td>
+                <td>TV</td>
+                <td>-</td>
+              </tr>
+              <tr class="table-danger">
+                <td>Sword Art Online</td>
+                <td>TV</td>
+                <td>4</td>
+              </tr>
+              <tr class="table-danger">
+                <td>Ore no Imouto ga Konnani Kawaii Wake ga Nai. Specials</td>
+                <td>ONA</td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+           <ul class="pagination justify-content-center">
+             <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+             <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+             <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+             <li class="page-item"><a class="page-link" href="javascript:void(0)">Next</a></li>
+          </ul>
+          <h4>Stats:</h4>
+          <div class="progress">
+            <div class="progress-bar" id="avg-score"></div>
+          </div>
+          <div class="stattext">
+            <p>Mean Score: <b>7.93</b></p>
+            <p>Total Entries: <b>20</b></p>
+            <p>Completed: <b>7</b></p>
+            <p>Watching: <b>5</b></p>
+            <p>Plan to Watch: <b>5</b></p>
+            <p>On Hold: <b>1</b></p>
+            <p>Dropped: <b>2</b></p>
+          </div>
+          <h2 id="watch">Watch</h2>
+          
+          <div class="alert alert-info">
+            <strong>Notice: </strong> Images below are only for testing purposes</div>
+          
+          <div class="container-fluid" id="watch-gallery">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="https://cdn.animenewsnetwork.com/thumbnails/max700x700/cms/news.2/147637/001_size8.jpg">
+              </div>
+              <div class="col-md-4">
+                <img src="https://m.media-amazon.com/images/M/MV5BZGVlY2ZhM2ItMWIwZC00YjU0LWJjNjAtZGVlNWJkM2JmZjhmXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg">
+              </div>
+              <div class="col-md-4">
+                <img src="https://external-preview.redd.it/RYulujq2Fj_C9Xg7aNJ5v8DmlVag3Bw5_SLMFbdGM48.png?auto=webp&s=814dabf36682641641618963de53cac0d534c909">
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-md-4">
+                <img src="https://cdn.animenewsnetwork.com/thumbnails/max1000x1500/cms/news/108200/gabrieldropout.jpg">
+              </div>
+              <div class="col-md-4">
+                <img src="https://external-preview.redd.it/FD---Eb498tJ_J6M2BfiKIlu7r4iSEUvk1pAIt5WT7Y.jpg?auto=webp&s=48bbd311bc91a9372ff491a65837daafb61ab9e6">
+              </div>
+              <div class="col-md-4">
+                <img src="https://external-preview.redd.it/zU7GmgtjX9EXVcKgXVNpRJgTTEzS2zBzvExYB2OjrZ8.jpg?auto=webp&s=fd0a101a761983982b878a3ff257ed3ccf9f9019">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="https://pbs.twimg.com/media/EoeRqx9UwAI-fvi.jpg">
+              </div>
+              <div class="col-md-4">
+                <img src="https://external-preview.redd.it/tq7avrWZi4JcBrRAIX4lo6emmPW7S652LZFhm_ymhl4.jpg?auto=webp&s=ed31e7cf75356436c0d4adf5d3a1df5587521236">
+              </div>
+              <div class="col-md-4">
+                <img src="https://cdn.animenewsnetwork.com/thumbnails/max1000x1500/cms/news/125783/img_owarimonogatari.jpg">
+              </div>
+            </div>
+          </div>
+          
+          <h2 id="about">About Me</h2>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">@Kokuryuu</h4>
+              <p class="card-text">Just a hero-- i mean, just a programmer for fun:))</p>
+              <p class="card-text">Check out my codepen pf:</p><a class="btn btn-primary" href="https://codepen.io/maxlawbreaker" target="_blank">My Profile</a>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

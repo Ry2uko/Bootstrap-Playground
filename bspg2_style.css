@@ -1,0 +1,238 @@
+body {
+  background-color: white !important;
+  overflow-x: hidden;
+}
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  position: fixed;
+  width: 100%;
+  max-width: 24vw;
+  height: 100%;
+}
+
+#navbar form#nav_form {
+  margin: 15px 0;
+  width: 100%;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#navbar form#nav_form button {
+  width: 15%;
+}
+
+#navbar form#nav_form input {
+  outline: none;
+  width: 83%;
+  height: 100%;
+}
+
+#navbar nav.navbar {
+  padding: 0.5rem 0 !important;
+}
+
+#navbar h2 {
+  padding: 20px 0 45px 0;
+}
+
+#navbar nav {
+  display: block;
+}
+
+#navbar nav li a {
+  color: #212529 !important;
+  font-size: 1.18rem;
+  padding: 0.6rem 0.5rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#navbar nav li a:hover {
+  color: #2d3339 !important;
+}
+
+#navbar nav li a:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+#parent-container {
+  width: 75vw;
+  position: absolute;
+  left: 25vw;
+}
+
+#parent-container h1 {
+  margin: 2rem;
+}
+
+#parent-container div.container {
+  margin: 3rem 0;
+  padding: 0;
+}
+
+#parent-container div.container h2 {
+  margin-bottom: 24px;
+}
+
+#parent-container div.container span.subheader {
+  font-size: 1.7rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#parent-container div.container p {
+  font-size: 1.2rem;
+}
+
+#parent-container div.container p a[data-toggle="popover"],
+#parent-container div.container p a[data-toggle="tooltip"] {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  #parent-container div.container {
+    max-width: 1200px;
+  }
+}
+
+#parent-container div#dropdown_sec button {
+  padding: 7px 31px;
+}
+
+#parent-container div#dropdown_sec .dropdown button {
+  border-radius: 0;
+}
+
+#parent-container div#collapse_sec div#accordion div.card-header .card-link {
+  color: #212529 !important;
+}
+
+#parent-container div#collapse_sec div#accordion div.card-header .card-link:hover {
+  color: #2d3339 !important;
+}
+
+#parent-container div#collapse_sec div#accordion div.collapse, #parent-container div#collapse_sec div#accordion div.collapsing {
+  font-size: 1.2rem;
+  padding: 9px;
+}
+
+#parent-container div#navs_sec div.tab-content {
+  font-size: 1.13rem;
+}
+
+#parent-container div#inputs_sec ol li {
+  margin: 10px 0;
+}
+
+#parent-container div#inputs_sec ol textarea {
+  resize: none;
+}
+
+#parent-container div#inputs_sec ol div.form-check-inline {
+  margin-right: 40px;
+}
+
+#parent-container div#carousel_sec div.carousel-item img {
+  width: 100%;
+  height: 560px;
+}
+
+#parent-container div#modal_sec div#modal div.modal-footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#parent-container div#modal_sec div#modal div.modal-footer p#modalfoot {
+  font-size: 2em;
+  -webkit-animation: rainbow 4s linear 0s infinite;
+          animation: rainbow 4s linear 0s infinite;
+}
+
+#parent-container div#utilities_sec span.box {
+  display: inline-block;
+  margin: 0 7px;
+  width: 70px;
+  height: 70px;
+}
+
+#parent-container div#utilities_sec span.separator {
+  display: block;
+  margin: 20px 0;
+}
+
+#parent-container div#utilities_sec div.box {
+  display: block;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  line-height: 79px;
+}
+
+#parent-container div#utilities_sec div#height-utility {
+  height: 200px;
+}
+
+#parent-container div#utilities_sec div#height-utility div.mh-100 {
+  height: 500px;
+}
+
+#parent-container div#utilities_sec div.chooseratio button {
+  width: 60px;
+}
+
+#parent-container div#utilities_sec b {
+  font-size: 1.2rem;
+}
+
+#parent-container div#flex_sec div.box {
+  display: block;
+  width: 85px;
+  height: 85px;
+}
+
+@-webkit-keyframes rainbow {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+@keyframes rainbow {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+/*# sourceMappingURL=bspg2_style.css.map */
